@@ -1,11 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import RandomNumber from "./pages/RandomNumber";
+import ImgChange from "./pages/ImgChange";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./pages/Layout";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <BrowserRouter>
+    <Routes>
+      <Route>
+        <Route index element={<Layout />} />
+        <Route path="randomnumber" element={<RandomNumber />} />
 
+        <Route path="imgchange" element={<ImgChange />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);

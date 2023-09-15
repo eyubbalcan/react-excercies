@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./style.css";
+import "../style.css";
 
-function App() {
+const App = () => {
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(10);
   const [randomNum, setRandomNum] = useState(5);
@@ -40,6 +40,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
