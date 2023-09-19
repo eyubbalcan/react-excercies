@@ -5,6 +5,7 @@ import ImgChange from "./pages/ImgChange";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
+import TodoList from "./pages/TodoList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route path="randomnumber" element={<RandomNumber />} />
 
         <Route path="imgchange" element={<ImgChange />} />
+        <Route path="todolist" element={<TodoList />} />
       </Route>
     </Routes>
   </BrowserRouter>

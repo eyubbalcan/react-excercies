@@ -12,6 +12,9 @@ const Layout = () => {
           <li>
             <Link to="imgchange">İmg Change</Link>
           </li>
+          <li>
+            <Link to="todolist">Todo List</Link>
+          </li>
         </ul>
       </nav>
     </>
