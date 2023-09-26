@@ -15,6 +15,9 @@ const Layout = () => {
           <li>
             <Link to="todolist">Todo List</Link>
           </li>
+          <li>
+            <Link to="randomozlu">Random Ozlu</Link>
+          </li>
         </ul>
       </nav>
     </>
