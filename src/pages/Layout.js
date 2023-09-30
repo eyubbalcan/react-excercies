@@ -18,6 +18,9 @@ const Layout = () => {
           <li>
             <Link to="randomozlu">Random Ozlu</Link>
           </li>
+          <li>
+            <Link to="date">Özel Günler</Link>
+          </li>
         </ul>
       </nav>
     </>

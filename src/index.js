@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import TodoList from "./pages/TodoList";
 import RandomOzluSoz from "./pages/RandomOzluSoz";
+import Date from "./pages/Date/Date";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +20,7 @@ root.render(
         <Route path="imgchange" element={<ImgChange />} />
         <Route path="todolist" element={<TodoList />} />
         <Route path="randomozlu" element={<RandomOzluSoz />} />
-
+        <Route path="date" element={<Date />} />
       </Route>
     </Routes>
   </BrowserRouter>
